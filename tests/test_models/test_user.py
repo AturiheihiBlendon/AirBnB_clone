@@ -12,7 +12,7 @@ class TestUser(unittest.TestCase):
     """
 
     def test_instantiation(self):
-        """Tests instatiation of User class."""
+        """Tests instatiation of User class"""
 
         u = User()
         self.assertEqual(str(type(u)), "<class 'models.user.User'>")
