@@ -36,6 +36,12 @@ class TestBaseModel(unittest.TestCase):
         b = BaseModel()
         self.assertTrue(hasattr(b, "id"))
 
+    def test_save_initial(self):
+        """Tests the public instance method save() updates the updated_at."""
+
+        b = BaseModel()
+        self.assertEqual(b.created_at, b.updated_at)
+
     def test_save(self):
         """Tests the public instance method save() updates the updated_at."""
 
