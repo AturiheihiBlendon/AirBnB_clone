@@ -40,7 +40,7 @@ class TestBaseModel(unittest.TestCase):
         """Tests the public instance method save() updates the updated_at."""
 
         b = BaseModel()
-        self.assertEqual(b.created_at, b.updated_at)
+        self.assertIs(b.created_at, b.updated_at)
 
     def test_save(self):
         """Tests the public instance method save() updates the updated_at."""
